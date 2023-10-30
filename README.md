@@ -1,44 +1,36 @@
-[![CI](https://github.com/AliciaXia222/IDS_706_miniproject_1/actions/workflows/cicd.yml/badge.svg)](https://github.com/AliciaXia222/IDS_706_miniproject_1/actions/workflows/cicd.yml)
-# IDS_706_miniproject_1
-This repository is only a test for Course IDS 706 miniproject1, "creating a template in github".
-It incorporates various tools and libraries to support the development and deployment of data engineering projects. Below, we provide an overview of each feature included in this environment.
+[![Install](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/install.yml)
+[![Format](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/format.yml)
+[![Lint](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/lint.yml)
+[![Test](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/test.yml)
 
-* 'Makefile'
+# IDS 706 Data Engineering Week 9 Mini Project
 
-It is a simple way to define and execute frequently used commands for automation. Here's a breakdown of what each target does:
-    
-    * 'Pytest': Pytest is a testing framework for Python. It allows you to write and run tests to ensure the correctness of your code. In data engineering, it's essential to validate the accuracy and reliability of your data pipelines and transformation processes.
-    
-    * 'Pylint': Pylint is a code linter for Python. It helps ensure your code adheres to coding standards and best practices, which is crucial for maintaining code quality in a collaborative environment.
-   
-    * 'test': This target runs your test suite using pytest. It provides verbose output (-vv), calculates code coverage (--cov=main), and specifies the coverage report generation directory (--cov=mylib). It's a good practice to ensure your code is tested thoroughly.
-    
-    * 'format': This target formats your Python code using black, a code formatter. Consistent code formatting enhances code readability and maintainability.
-    
-    * 'lint': This target performs code linting using pylint. It disables specific lint checks (--disable=R,C), ignores certain files (--ignore-patterns=test_.*?py *.py mylib/*.py), and checks for code quality and adherence to coding standards.
-    
-    * 'container-lint': This target runs hadolint, a Dockerfile linter, to check the quality and adherence to best practices of your Dockerfile.
-    
-    * 'refactor': This target combines the format and lint targets. It's a convenient way to ensure your code is well-formatted and linted before further actions.
-   
-    * 'deploy': This target is a placeholder for deployment-related actions. You can customize it to perform tasks like deploying your data engineering project to a production environment.
-   
-    * 'all': This target defines the default build process for your project. It specifies that when you run make all, it should execute the install, lint, test, format, and deploy targets in that order.
+Gavin Li `gl183`
 
-    ## To use this Makefile, 
+## Purpose of the project
 
-        1. open your terminal
-        2. navigate to your project directory
-        3. run the desired command using make. 
-            For example, I can install dependencies by running 'make install', run tests with 'make test', or format my code with 'make format'.
+The purpose of this week's mini project is to perform data manipulation in a cloud based environment, specifically Google Colab.
 
-** Also I need make sure I have the required tools (pytest, black, pylint, hadolint, etc.) installed in my development environment to use this Makefile effectively.
+## Google Colab
 
-* 'GitHub Actions'
+[Here is the link for my Jupyter Notebook file](https://colab.research.google.com/drive/1AX91nExsTbxolOcUMSG3dFysssKby7oF?usp=sharing)
 
-    I set up workflows to automate tasks such as running tests, installing package, linting code, formatting code and deploying my data engineering projects. It helps ensure that code is continuously integrated and tested as I make changes with the 'cicd.yml' file.
+## Data manipulation and visualization
 
-* 'Dokerfile':
-    I made this configuration well-suited for a data engineering or development environment where I need Python, Docker, GPU support (NVIDIA CUDA), Jupyter notebooks, and code linting/formating tools like Pylint, Black, and others. It also includes extensions for GitHub integration and Makefile support. Make sure to provide the necessary setup instructions and scripts in my "setup.sh" file to complete the environment setup.
+The dataset used in this project is the kaggle Titanic training dataset.
 
-Overall, this environment is aim to make data analytics workstream more efficient and automated.
+The dataset is grouped by gender, then a mean of survived variable is calculated for each group to compare the survival rate.
+
+A plot is then made to visualize the survival rate.
+
+Here is the plot
+
+![Alt text](<Screenshot 2023-10-29 at 11.42.27 PM.png>)
+
+## Result of `make format`, `make lint`, and `make test`
+
+![Alt text](<Screenshot 2023-10-29 at 11.51.14 PM.png>)
+
+## Colab working environment
+
+![Alt text](<Screenshot 2023-10-29 at 11.37.15 PM.png>)
