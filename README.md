@@ -1,11 +1,4 @@
-[![Install](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/install.yml)
-[![Format](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/format.yml)
-[![Lint](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/lint.yml)
-[![Test](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Gavin_Li_Week9_Mini_Project/actions/workflows/test.yml)
-
 # IDS 706 Data Engineering Week 9 Mini Project
-
-Gavin Li `gl183`
 
 ## Purpose of the project
 
@@ -13,7 +6,7 @@ The purpose of this week's mini project is to perform data manipulation in a clo
 
 ## Google Colab
 
-[Here is the link for my Jupyter Notebook file](https://colab.research.google.com/drive/1AX91nExsTbxolOcUMSG3dFysssKby7oF?usp=sharing)
+[Here is the link for my Jupyter Notebook file](https://colab.research.google.com/drive/1AWeaDWObqadkaCiVoeHaO62NLFb7-JkV#scrollTo=AatiHoAvycGO)
 
 ## Data manipulation and visualization
 
